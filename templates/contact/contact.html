@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="centered"><h2>Kontakt</h2></div>
+
+    {% if form.errors %}
+        <p style="color: red;">
+            Proszę poprawić błędy {{ form.errors|pluralize }}.
+        </p>
+    {% endif %}
+
+    <form action="" method="post">
+        <table>
+            {{ form.as_table }}
+        </table>
+        {% csrf_token %}
+        <input type="submit" value="Wyślij">
+    </form>
+
+
+{% endblock %}

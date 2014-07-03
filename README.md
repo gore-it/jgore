@@ -1,2 +1,2 @@
-bombardier
+JGore - projects commander
 ==========

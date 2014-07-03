@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="centered"><h2>Edukacja</h2></div>
+
+{% for article_item in articles %}
+   <div class="news">
+       <p>Tytuł: <i><a href="/edukacja/{{ article_item.id }}">{{ article_item.title }}</a></i> </p>
+
+       <br />
+   </div>
+{% endfor %}
+
+
+{% endblock %}

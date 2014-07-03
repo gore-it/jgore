@@ -2,14 +2,13 @@
 
 {% block content %}
 
-<div class="centered"><h2>Aktualności</h2></div>
+<div class="centered"><h2>News</h2></div>
 
 {% for news_item in news %}
    <div class="news">
         <p>Tytuł: <i>{{ news_item.title }}</i> Autor: <b>{{ news_item.user.username }}</b></p>
        <p>{{ news_item.text }}</p>
        <br />
-       <a href="#" >Komentarze</a>
    </div>
 {% endfor %}
 

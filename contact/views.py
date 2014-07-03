@@ -14,7 +14,7 @@ def contact(request):
                 cd['subject'],
                 cd['message'],
                 cd['email'],
-                ['admin@jgore.net.pl'],
+                ['admin@jgore.pl'],
             )
             return HttpResponseRedirect('/kontakt')
     else:

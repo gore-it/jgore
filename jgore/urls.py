@@ -6,9 +6,13 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
 
-    url(r'^$', 'news.views.show', name='home'),
-    url(r'^news$', 'news.views.show', name='news'),
-    url(r'^kontakt$', 'contact.views.contact', name='contact'),
+    url(r'^$', 'news.views.show', ),
+    url(r'^news$', 'news.views.show', ),
+    url(r'^projekty$', 'projects.views.show', ),
+    url(r'^edukacja$', 'education.views.show', ),
+    url(r'^edukacja/(?P<article_id>\d+)/$', 'education.views.article', ),
+    url(r'^forum$', 'forum.views.show', ),
+    url(r'^kontakt$', 'contact.views.contact', ),
 
     url(r'^admin/', include(admin.site.urls)),
 )

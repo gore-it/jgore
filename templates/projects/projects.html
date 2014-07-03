@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="centered"><h2>Projekty</h2></div>
+
+{% for project_item in projects %}
+   <div class="news">
+       <p>Tytuł: <i>{{ project_item.title }}</i> </p>
+       <p>{{ project_item.text }}</p>
+       <br />
+   </div>
+{% endfor %}
+
+
+{% endblock %}

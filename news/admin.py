@@ -1,5 +1,5 @@
 from django.contrib import admin
-from news.models import News, Comment
+from news.models import News
 
 admin.site.register(News)
-admin.site.register(Comment)
+

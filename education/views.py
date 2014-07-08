@@ -12,7 +12,7 @@ def show(request):
 
 
 def article(request, article_id):
-    article = Article.objects.get(id=article_id)
-    t = get_template('education/articles-all.html')
-    html = t.render(Context({'article': article}))
+    article_item = Article.objects.get(id=article_id)
+    t = get_template('education/article.html')
+    html = t.render(Context({'article_item': article_item}))
     return HttpResponse(html)

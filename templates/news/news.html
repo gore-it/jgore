@@ -7,7 +7,7 @@
 {% for news_item in news %}
    <div class="news">
         <p>Tytuł: <i>{{ news_item.title }}</i> Autor: <b>{{ news_item.user.username }}</b></p>
-       <p>{{ news_item.text }}</p>
+       <p>{{ news_item.text|safe }}</p>
        <br />
    </div>
 {% endfor %}

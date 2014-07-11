@@ -7,7 +7,7 @@
 {% for project_item in projects %}
    <div class="news">
        <p>Tytuł: <i>{{ project_item.title }}</i> </p>
-       <p>{{ project_item.text }}</p>
+       <p>{{ project_item.text|safe }}</p>
        <br />
    </div>
 {% endfor %}
